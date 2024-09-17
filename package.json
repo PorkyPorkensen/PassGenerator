@@ -1,6 +1,5 @@
 {
-  "name": "Scrim-s0qmm7vquk",
-  "description": "https://v2.scrimba.com/s0qmm7vquk",
+
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,8 +7,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "latest",
+    "react-dom": "latest",
     "vite": "latest"
   },
   "devDependencies": {

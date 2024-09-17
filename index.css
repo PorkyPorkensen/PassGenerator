@@ -25,15 +25,15 @@ body {
 
 #rp {
     margin-top: -25px;
-    color: #10B981;
+    color: #f79c14;
 }
 
 button {
     font-family: Inter, sans-serif;
     padding: 0.5em 1em;
-    background: #10B981;
+    background: #2F3E53;
     color: white;
-    border: solid 1px #10B981;
+    border: solid 1px whitesmoke;
     margin-top: 30px;
     border-radius:4px;
 }
@@ -79,4 +79,8 @@ button {
     width: 80%;
     margin-bottom: 2em;
     padding: 0.25em;
+}
+
+.burntOrange {
+    background-color: #d88912;
 }

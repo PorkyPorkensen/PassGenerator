@@ -14,8 +14,7 @@ const [generatedPassword, setGeneratedPassword] = React.useState("")
 
 const activeStyles = 
 {
-    backgroundColor: "#2F3E53",
-    textDecoration: "underline"   
+    backgroundColor: "#d88912",   
 }
 console.log(useSC)
 console.log(useNum)
@@ -74,7 +73,7 @@ function getPasswordChars(){
                     style={ useNum ? activeStyles : null}
                     >
                     Include Numbers?</button>
-                <button onClick={getPasswordChars}>Generate passwords</button>
+                <button className="burntOrange"onClick={getPasswordChars}>Generate passwords</button>
               </div>
         </div>
         <h3 id="line"></h3>

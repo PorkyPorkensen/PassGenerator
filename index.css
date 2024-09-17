@@ -72,7 +72,7 @@ button {
 }
 
 .conditionBtns {
-    margin: 0.2em;
+    margin: 0.5em;
 }
 
 .lengthSelect {
@@ -82,8 +82,6 @@ button {
 }
 
 .burntOrange {
-    display: flex;
-    margin: 0 auto;
     background-color: #b3710f;
     font-size: 18px;
     padding: 0.75em 1.5em;

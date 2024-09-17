@@ -73,6 +73,7 @@ button {
 
 .conditionBtns {
     margin: 0.5em;
+    cursor: pointer;
 }
 
 .lengthSelect {
@@ -85,4 +86,5 @@ button {
     background-color: #b3710f;
     font-size: 18px;
     padding: 0.75em 1.5em;
+    cursor: pointer;
 }

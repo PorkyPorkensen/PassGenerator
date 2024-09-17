@@ -73,7 +73,7 @@ function getPasswordChars(){
                     style={ useNum ? activeStyles : null}
                     >
                     Include Numbers?</button>
-                <button className="burntOrange"onClick={getPasswordChars}>Generate passwords</button>
+                <button className="burntOrange"onClick={getPasswordChars}>Generate password</button>
               </div>
         </div>
         <h3 id="line"></h3>

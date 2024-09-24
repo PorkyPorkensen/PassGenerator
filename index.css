@@ -42,7 +42,7 @@ button {
     display: flex;
     width: 425px;
     border-bottom: solid 2px #2F3E53;
-    margin: -100px auto 0 auto;
+    margin: auto auto 0 auto;
 }
 
 #passes {

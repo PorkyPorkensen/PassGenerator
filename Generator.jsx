@@ -46,41 +46,66 @@ function getPasswordChars(){
     
     return (
         <div>
-        <div className="hero">
-            <div className="main">
-                <h1>Generate a</h1>
-                <h1 id="rp">random password</h1>
-                <p>Never use an insecure password again.</p>  
-                <input 
-                className="lengthSelect"
-                type="number" 
-                placeholder="how many characters long?" 
-                min="6" 
-                max="20"
-                value={length} 
-                onChange={(e) => setLength(Number(e.target.value))}
-                 />
-                <br/>
-                <button 
-                    onClick={()=> setUseSC(!useSC)}
-                    className="conditionBtns"
-                    style={ useSC ? activeStyles : null}
-                    >
-                    Include Special Characters?</button>
-                <button 
-                    onClick={()=> setUseNum(!useNum)}
-                    className="conditionBtns"
-                    style={ useNum ? activeStyles : null}
-                    >
-                    Include Numbers?</button>
-                <button className="burntOrange"onClick={getPasswordChars}>Generate password</button>
-              </div>
+            <section className="hero">
+                <div className="main">
+                    <h1>Generate a <span id="rp">random password</span></h1>
+                    <p>Never use an insecure password again.</p>  
+                    <form>
+                        <label htmlFor="lengthSelect">Password Length:</label>
+                        <input 
+                            className="lengthSelect"
+                            id="lengthSelect"
+                            type="number" 
+                            placeholder="How many characters long?" 
+                            min="6" 
+                            max="20"
+                            value={length} 
+                            onChange={(e) => setLength(Number(e.target.value))}
+                            aria-label="Select password length"
+                        />
+                        <br/>
+                        <button 
+                            type="button"
+                            onClick={() => setUseSC(!useSC)}
+                            className="conditionBtns"
+                            style={useSC ? activeStyles : null}
+                            aria-pressed={useSC}  // To indicate whether the button is active or not
+                            aria-label="Toggle special characters inclusion"
+                        >
+                            Include Special Characters?
+                        </button>
+                        <button 
+                            type="button"
+                            onClick={() => setUseNum(!useNum)}
+                            className="conditionBtns"
+                            style={useNum ? activeStyles : null}
+                            aria-pressed={useNum}  // To indicate whether the button is active or not
+                            aria-label="Toggle numbers inclusion"
+                        >
+                            Include Numbers?
+                        </button>
+                        <button 
+                            type="button" 
+                            className="burntOrange"
+                            onClick={getPasswordChars}
+                            aria-label="Generate password"
+                        >
+                            Generate password
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <hr id="line" aria-hidden="true" /> {/* Accessible separation */}
+            <div 
+                onClick={copyPass} 
+                id="passes" 
+                role="button" 
+                aria-label="Copy generated password"
+                tabIndex="0"  // To make this div focusable and clickable by keyboard
+            >
+                <h3 id="inputBox1">{generatedPassword || "Your password will appear here"}</h3>
+            </div>
         </div>
-        <h3 id="line"></h3>
-            <div onClick={copyPass}id="passes">
-                <h3 id="inputBox1">{generatedPassword}</h3>
-            </div>
-            </div>
-    )
+    );
     
 }

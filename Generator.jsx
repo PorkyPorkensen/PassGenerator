@@ -48,7 +48,7 @@ function getPasswordChars(){
         <div>
             <section className="hero">
                 <div className="main">
-                    <h1>Generate a <span id="rp">random password</span></h1>
+                    <h1 className="siteHead">Generate a <span id="rp">random password</span></h1>
                     <p>Never use an insecure password again.</p>  
                     <form>
                         <label htmlFor="lengthSelect">Password Length:</label>

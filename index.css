@@ -88,3 +88,7 @@ button {
     padding: 0.75em 1.5em;
     cursor: pointer;
 }
+
+.siteHead {
+    font-size: 1.25rem;
+}
